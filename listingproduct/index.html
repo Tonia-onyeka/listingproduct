@@ -4,48 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.23/css/jquery.dataTables.css">
-    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./index.css">
     <title>Product Listing</title>
 </head>
 <body>  
-    <form>
-        <div class="container">
-    <div class="column">
-        <h3>Add New Product</h3>
-        <table border="0" cellspacing="5px" cellpadding="5px" width="480px" >
+    <form method= "POST" url="https://gorest.co.in/public-api/products">
+        <div class="container" >
+    <div class="">
+        <table class="list" cellspacing="5px" cellpadding="5px" width="450px" >
+            <tr><td class="down"><h3>Add New Product</h3> </td></tr>
             <tr>
-            <td> id:</td>
-            <td><input type="text" value="id" placeholder="id"></td>
+            <td class="down"> id:</td>
+            <td ><input type="text" name="id"  class="mod" placeholder="id"></td>
             </tr>
              <tr>
-            <td> Name:</td>
-            <td><input type="text" value="id" placeholder="id">
+            <td class="down"> Name:</td>
+            <td><input type="text" name="id"  class="mod" placeholder="name">
             </tr>
             <tr>
-            <td> Description:</td>
-             <td><input type="text" value="id" placeholder="id">
+            <td class="down"> Description:</td>
+             <td><input type="text" name="id"  class="mod" placeholder="description">
             </tr>
             <tr>
-            <td> Image:</td>
-            <td><input type="image">
+            <td class="down"></tdclass> Image:</td>
+            <td><input type="text"   class="mod">
              </tr>
             <tr>
-            <td> Price:</td>
-            <td><input type="text" value="id" placeholder="id">
+            <td class="down"> Price:</td>
+            <td><input type="text" name="id"  class="mod" placeholder="price">
             </tr>
              <tr>
-            <td> Discount_amount:</td>
-            <td><input type="text" value="id" placeholder="id">
+            <td class="down"> Discount_amount:</td>
+            <td><input type="text" name="id"   class="mod" placeholder="amount">
                  </tr>
              <tr>
-            <td> Status:</td>
-            <td><select="position">
-            <option value="true" selected="selected">true</option>
+            <td class="down"> Status:</td>
+            <td><select>
+            <option value="true">true</option>
              <option value="false">false</option>
              </select></td>
              </tr>
              <tr>
-            <td><input type="submit" value="add new"></td>
+            <td><input type="submit" value="Add new" class="bn"></td>
              </tr>
         </table>
         </div>
@@ -63,6 +63,7 @@
           <th>Price</th>
           <th>Discount_amount</th>
           <th>Status</th>
+          <th>Action</th>
         </thead>
        <tbody>
            </tbody>
