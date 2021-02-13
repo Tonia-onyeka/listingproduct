@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.23/css/jquery.dataTables.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>Product Listing</title>
+</head>
+<body>  
+    <form>
+        <div class="container">
+    <div class="column">
+        <h3>Add New Product</h3>
+        <table border="0" cellspacing="5px" cellpadding="5px" width="480px" >
+            <tr>
+            <td> id:</td>
+            <td><input type="text" value="id" placeholder="id"></td>
+            </tr>
+             <tr>
+            <td> Name:</td>
+            <td><input type="text" value="id" placeholder="id">
+            </tr>
+            <tr>
+            <td> Description:</td>
+             <td><input type="text" value="id" placeholder="id">
+            </tr>
+            <tr>
+            <td> Image:</td>
+            <td><input type="image">
+             </tr>
+            <tr>
+            <td> Price:</td>
+            <td><input type="text" value="id" placeholder="id">
+            </tr>
+             <tr>
+            <td> Discount_amount:</td>
+            <td><input type="text" value="id" placeholder="id">
+                 </tr>
+             <tr>
+            <td> Status:</td>
+            <td><select="position">
+            <option value="true" selected="selected">true</option>
+             <option value="false">false</option>
+             </select></td>
+             </tr>
+             <tr>
+            <td><input type="submit" value="add new"></td>
+             </tr>
+        </table>
+        </div>
+        </div>
+        </form>
+     <div class="container">
+         <div class ="row">
+             <div class= "col-md-8">
+    <table class ="display" id ="mytable" width="100%">
+       <thead>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Description</th>
+          <th>Image</th>
+          <th>Price</th>
+          <th>Discount_amount</th>
+          <th>Status</th>
+        </thead>
+       <tbody>
+           </tbody>
+      
+      </table>
+         </div>
+         </div>        
+      </div>
+      
+      
+
+     
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+ <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.23/js/jquery.dataTables.js"></script>
+ <script src="./index.js"></script>
+</body>
+</html>
