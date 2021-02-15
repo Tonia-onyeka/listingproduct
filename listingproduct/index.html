@@ -8,49 +8,20 @@
     <title>Product Listing</title>
 </head>
 <body>  
-    <form method= "POST" url="https://gorest.co.in/public-api/products">
-        <div class="container" >
-    <div class="">
-        <table class="list" cellspacing="5px" cellpadding="5px" width="450px" >
-            <tr><td class="down"><h3>Add New Product</h3> </td></tr>
-            <tr>
-            <td class="down"> id:</td>
-            <td ><input type="text" name="id"  class="mod" placeholder="id"></td>
-            </tr>
-             <tr>
-            <td class="down"> Name:</td>
-            <td><input type="text" name="id"  class="mod" placeholder="name">
-            </tr>
-            <tr>
-            <td class="down"> Description:</td>
-             <td><input type="text" name="id"  class="mod" placeholder="description">
-            </tr>
-            <tr>
-            <td class="down"></tdclass> Image:</td>
-            <td><input type="text"   class="mod">
-             </tr>
-            <tr>
-            <td class="down"> Price:</td>
-            <td><input type="text" name="id"  class="mod" placeholder="price">
-            </tr>
-             <tr>
-            <td class="down"> Discount_amount:</td>
-            <td><input type="text" name="id"   class="mod" placeholder="amount">
-                 </tr>
-             <tr>
-            <td class="down"> Status:</td>
-            <td><select>
-            <option value="true">true</option>
-             <option value="false">false</option>
-             </select></td>
-             </tr>
-             <tr>
-            <td><input type="submit" value="Add new" class="bn"></td>
-             </tr>
-        </table>
+   
+
+        <div class="list">
+            <form id="form-field">
+                <h3 class="add">Add New Product</h3> 
+                <input type="text" name="name" placeholder="Name" class="mod" required>
+                <input type="text" name="price" placeholder="Price" class="mod" required>
+                <input type="text" name="image" placeholder="Image"  class="mod"required>
+                <input type="text" name="status" placeholder="Status" class="mod" required>
+                <input type="text" name="discount_amount" placeholder="Discount Amount"  class="mod"required>
+                <textarea name="description" id="" cols="0" rows="10" class="modi" required></textarea>
+                <button type="submit"  class="bn">Add new</button>
+            
         </div>
-        </div>
-        </form>
      <div class="container">
          <div class ="row">
              <div class= "col-md-8">
@@ -63,7 +34,7 @@
           <th>Price</th>
           <th>Discount_amount</th>
           <th>Status</th>
-          <th>Action</th>
+          
         </thead>
        <tbody>
            </tbody>

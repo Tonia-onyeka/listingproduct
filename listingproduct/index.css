@@ -18,29 +18,35 @@ div.container {
 	margin: 0 auto;
 }
 
-table.list{
+.list{
     border:1px solid;
     margin-bottom:20px;
     margin-left:30px; 
-    height:50vh;
+    height:70vh;
     background-color: rgb(54, 129, 54);
+    width:400px;
 }
 
-
-td{  
-    height:6vh;
-}
-
-
+.modi{
+    width:90%;
+    border-radius:7px;
+    height:25vh;
+    margin-top:5px;
+   margin-left:10px;
+ }
+ 
 .mod{
    padding: 0px 5px 5px 5px; 
    width:90%;
    border-radius:7px;
+   height:6vh;
+   margin-top:5px;
+   margin-left:10px;
 }
-td.down{
-    color:#ffff;
-    font-weight: lighter;
-    margin-left:20px;
+
+.add{
+    color:rgb(226, 214, 214);
+    text-align: center;
 }
 
 .bn{
